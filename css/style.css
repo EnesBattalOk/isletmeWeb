@@ -1291,63 +1291,83 @@ input:checked+.slider:before {
     margin-top: 2px;
 }
 
-/* Phone Mockup */
+/* iOS (iPhone 16 Pro) Style Mockup */
 .phone-mockup {
-    width: 320px;
+    width: 310px;
     height: 640px;
-    background: var(--gradient-primary);
-    border-radius: 45px;
-    padding: 18px;
-    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+    background: #2c2c2e;
+    /* Dark Titanium frame */
+    border-radius: 48px;
+    /* Deep iOS curves */
+    padding: 12px;
+    /* Uniform bezel */
+    box-shadow:
+        0 0 0 2px #444,
+        /* Outer edge definition */
+        0 0 0 4px #1c1c1e,
+        /* Inner frame depth */
+        0 30px 60px -15px rgba(0, 0, 0, 0.6),
+        /* Deep shadow */
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    /* Inner highlight */
     position: relative;
     margin: 0 auto;
+    border: none;
+    /* Reset Samsung border */
 }
 
-.phone-mockup::before {
+/* Volume Buttons (Left) */
+.volume-buttons::before,
+.volume-buttons::after {
     content: '';
     position: absolute;
-    top: 28px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 110px;
-    height: 28px;
-    background: #0f172a;
-    border-radius: 0 0 22px 22px;
+    left: -4px;
+    width: 4px;
+    background: #1c1c1e;
+    border-radius: 4px 0 0 4px;
 }
 
+.volume-buttons::before {
+    top: 120px;
+    height: 50px;
+}
+
+.volume-buttons::after {
+    top: 180px;
+    height: 50px;
+}
+
+/* Power Button (Right) */
+.power-button {
+    position: absolute;
+    right: -4px;
+    top: 140px;
+    width: 4px;
+    height: 80px;
+    background: #1c1c1e;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Cleaned up phone-screen rule */
 .phone-screen {
     width: 100%;
     height: 100%;
-    background: white;
-    border-radius: 32px;
+    background: black;
+    border-radius: 38px;
+    /* Matching inner radius */
     overflow: hidden;
-    padding: 50px 24px 24px;
-}
-
-.screen-content {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.mock-chart {
-    height: 220px;
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-    border-radius: 16px;
     position: relative;
-    overflow: hidden;
+    border: 1px solid #000;
 }
 
-.mock-chart::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 65%;
-    background: var(--gradient-primary);
-    clip-path: polygon(0 50%, 20% 40%, 40% 60%, 60% 30%, 80% 50%, 100% 20%, 100% 100%, 0 100%);
+.phone-app-screen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
+
+
 
 .mock-data-row {
     height: 70px;
@@ -1918,4 +1938,122 @@ input:checked+.slider:before {
     text-decoration-thickness: 2px;
     text-decoration-color: rgba(2, 132, 199, 0.4);
     text-underline-offset: 4px;
+}
+
+/* Mobile Responsiveness Updates */
+@media (max-width: 768px) {
+
+    /* Header Button Fix */
+    .header-actions .btn {
+        padding: 10px 16px;
+        /* Smaller padding */
+        font-size: 0.9rem;
+        /* Smaller font */
+        white-space: nowrap;
+        /* Prevent wrapping */
+        height: 40px;
+        /* Fixed height */
+    }
+
+    /* About Section Fixes */
+    .section-about {
+        padding: 40px 0;
+        /* Reduced vertical padding */
+    }
+
+    .about-text-wrapper {
+        padding: 30px 20px;
+        margin: 0 10px;
+        border-width: 0;
+        /* Remove border on mobile for cleaner look */
+        box-shadow: 0 10px 30px -5px rgba(12, 74, 110, 0.1);
+    }
+
+    .about-text-wrapper::before {
+        font-size: 80px;
+        /* Smaller quote mark */
+        top: -20px;
+        left: 10px;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+        /* Significantly smaller font for mobile */
+        line-height: 1.6;
+    }
+}
+
+/* Footer Contact & Map Styles */
+.contact-column .contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-column .contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: var(--gray-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+.contact-column .contact-list li i,
+.contact-column .contact-list li img {
+    color: var(--primary-light);
+    min-width: 24px;
+    height: 24px;
+    margin-top: 3px;
+    object-fit: contain;
+}
+
+.contact-column .contact-list li span,
+.contact-column .contact-list li a {
+    color: var(--gray-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-column .contact-list li a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.map-column .map-container {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--gray-dark);
+}
+
+.map-column .map-container iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+    /* Reduced height for balance */
+}
+
+/* Ensure footer grid responsiveness */
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .map-column {
+        margin-top: 20px;
+    }
 }
