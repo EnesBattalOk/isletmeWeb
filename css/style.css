@@ -1755,3 +1755,167 @@ input:checked+.slider:before {
         height: 480px;
     }
 }
+
+/* About Text Section - Enhanced */
+.section-about {
+    padding: 100px 0;
+    background: linear-gradient(180deg, var(--white) 0%, var(--light) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-about::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(2, 132, 199, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.section-about::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(234, 88, 12, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.about-text-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding: 60px 50px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+
+/* Decorative Quote Mark */
+.about-text-wrapper::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 40px;
+    font-family: serif;
+    font-size: 160px;
+    line-height: 1;
+    color: var(--primary-light);
+    opacity: 0.1;
+    pointer-events: none;
+    font-weight: 700;
+}
+
+.about-text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--heading-color);
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+.about-text .text-primary {
+    position: relative;
+    display: inline-block;
+}
+
+.about-text .text-primary::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--primary-light);
+    opacity: 0.15;
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.font-bold {
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .section-about {
+        padding: 60px 0;
+    }
+
+    .about-text-wrapper {
+        padding: 40px 24px;
+        margin: 0 16px;
+    }
+
+    .about-text {
+        font-size: 1.15rem;
+        line-height: 1.7;
+    }
+
+    .about-text-wrapper::before {
+        font-size: 100px;
+        top: -10px;
+        left: 20px;
+    }
+}
+
+/* Enhanced About Section Styles */
+.about-text-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    /* More opaque for better readability */
+    box-shadow: 0 25px 50px -12px rgba(12, 74, 110, 0.15);
+    /* Stronger, tinted shadow */
+    border: 1px solid rgba(226, 232, 240, 1);
+    /* Visible border */
+}
+
+/* Decorative Quote Mark */
+.about-text-wrapper::before {
+    content: '"';
+    position: absolute;
+    top: -30px;
+    left: 40px;
+    font-family: serif;
+    font-size: 160px;
+    line-height: 1;
+    color: var(--primary);
+    opacity: 0.3;
+    /* Increased opacity for more visible blue */
+    pointer-events: none;
+    font-weight: 700;
+}
+
+/* Typography Update - Montserrat */
+.about-text {
+    font-family: 'Montserrat', sans-serif;
+    /* Modern Geometric Font */
+    font-size: 1.25rem;
+    /* Readable text size */
+    color: var(--heading-color);
+    font-weight: 500;
+    line-height: 1.9;
+    position: relative;
+    z-index: 1;
+}
+
+.about-text .font-bold {
+    font-weight: 700;
+    /* Distinct bold for Montserrat */
+    font-style: normal;
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(2, 132, 199, 0.4);
+    text-underline-offset: 4px;
+}
