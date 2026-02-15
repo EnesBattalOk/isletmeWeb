@@ -60,7 +60,7 @@
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=10">
 </head>
 
 <body>
@@ -92,14 +92,29 @@
     <section class="hero">
         <div class="container hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">İşletmenizi ve <span class="text-gradient">Bireysel Bütçenizi</span> Yönetin</h1>
-                <p class="hero-description">İster işletme sahibi olun, ister bireysel kullanıcı. Stok, cari hesap,
-                    tahsilat ve tüm mali işlemlerinizi tek platformdan yönetin.</p>
+                <h1 class="hero-title"><span class="text-gradient">Her İşletmeye Uyum Sağlayan</span> En Sade Yönetim
+                    Deneyimi</h1>
+                <p class="hero-description">Her sektöre uyumlu, öğrenmesi kolay ve tamamen kapalı sistem çalışan
+                    bir
+                    yönetim asistanı. İşletme sahipleri ve bireyler için karmaşadan uzak, sonuç odaklı en sade çözüm.
+                </p>
 
                 <div class="hero-features">
                     <div class="hero-feature-item">
                         <i data-lucide="check-circle" class="text-success"></i>
-                        <span>Mobil & Masaüstü erişim kolaylığı</span>
+                        <span>Mobil & Masaüstü Erişim Kolaylığı</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i data-lucide="check-circle" class="text-success"></i>
+                        <span>Her İşletmeye Tam Uyumlu</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i data-lucide="check-circle" class="text-success"></i>
+                        <span>Öğrenmesi ve Kullanması Kolay</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i data-lucide="check-circle" class="text-success"></i>
+                        <span>Kapalı Sistem, Verileriniz Güvende</span>
                     </div>
                 </div>
 
@@ -116,7 +131,7 @@
                         <i data-lucide="star" class="fill-accent text-accent"></i>
                         <i data-lucide="star" class="fill-accent text-accent"></i>
                     </div>
-                    <span>50+ işletme tarafından güvenle kullanılıyor</span>
+                    <span>300+ işletme tarafından güvenle kullanılıyor</span>
                 </div>
 
                 <div class="hero-author-note">
@@ -127,40 +142,20 @@
                 </div>
             </div>
 
-            <div class="hero-image">
-                <div class="hero-screenshots">
-                    <!-- Main Window -->
-                    <div class="window-mockup main-window hover-lift">
-                        <div class="window-header">
-                            <div class="window-title">
-                                <i data-lucide="layout-dashboard" class="window-icon"></i>
-                                <span>SayaYazılım - Ana Ekran</span>
-                            </div>
-                            <div class="window-controls">
-                                <span class="control-btn minimize"><i data-lucide="minus"></i></span>
-                                <span class="control-btn maximize"><i data-lucide="square"></i></span>
-                                <span class="control-btn close"><i data-lucide="x"></i></span>
-                            </div>
-                        </div>
-                        <img src="asset/masaustu1.jpeg" alt="SayaYazılım Masaüstü Ekranı" class="window-content"
-                            width="800" height="450" style="width:100%; height:auto;">
+            <div class="hero-showcase">
+                <div class="window-mockup single-window">
+                    <div class="window-header">
+                        <div class="window-title">Program İçinden Görseller</div>
                     </div>
-
-                    <!-- Secondary Window -->
-                    <div class="window-mockup secondary-window float-animation">
-                        <div class="window-header">
-                            <div class="window-title">
-                                <i data-lucide="file-bar-chart" class="window-icon"></i>
-                                <span>Tahsilat Ekranı</span>
+                    <div class="window-content">
+                        <div class="slider-track">
+                            <div class="slide">
+                                <img src="asset/masaustu1.jpeg" alt="SayaYazılım Ana Ekran" class="slider-image">
                             </div>
-                            <div class="window-controls">
-                                <span class="control-btn minimize"><i data-lucide="minus"></i></span>
-                                <span class="control-btn maximize"><i data-lucide="square"></i></span>
-                                <span class="control-btn close"><i data-lucide="x"></i></span>
+                            <div class="slide">
+                                <img src="asset/masaustu2.jpeg" alt="SayaYazılım Tahsilat Ekranı" class="slider-image">
                             </div>
                         </div>
-                        <img src="asset/masaustu2.jpeg" alt="SayaYazılım Detay Ekranı" class="window-content"
-                            width="800" height="450" style="width:100%; height:auto;">
                     </div>
                 </div>
             </div>
@@ -175,7 +170,7 @@
             <div class="about-text-wrapper">
                 <p class="about-text">
                     "Temelleri <span class="text-primary font-bold">20 yıl öncesine</span> dayanan ve bugün <span
-                        class="text-primary font-bold">50’den fazla işletme</span> tarafından güvenle tercih edilen
+                        class="text-primary font-bold">300’den fazla işletme</span> tarafından güvenle tercih edilen
                     platformumuz; her sektörün ihtiyacına cevap verecek esnekliğe ve bireysel kullanımın gerektirdiği
                     sadeliğe sahip bir yönetim aracıdır. Stok takibinden cari hesap yönetimine, banka
                     entegrasyonlarından detaylı raporlamaya kadar tüm süreçlerinizi tek bir merkezde toplayarak
@@ -277,6 +272,59 @@
         </div>
     </section>
 
+    <!-- Mobile Add-on Section -->
+    <section class="section bg-gradient-subtle" id="mobile-addon">
+        <div class="container">
+            <div class="mobile-addon-container">
+                <div class="mobile-addon-content">
+                    <span class="badge-new">YENİ</span>
+                    <h2 class="mobile-addon-title">Mobil Uygulama ile İşletmenizi Cebinizden Yönetin</h2>
+                    <p class="mobile-addon-description">
+                        İster IOS ister Android cihazınızdan, işletmenizin tüm verilerine anlık erişim sağlayın.
+                        Masaüstü programınızla tam entegre çalışır, verileriniz her zaman senkronize kalır.
+                    </p>
+
+                    <div class="mobile-features-grid">
+                        <div class="mobile-feature">
+                            <i data-lucide="smartphone" class="feature-icon-small"></i>
+                            <span>iOS & Android Desteği</span>
+                        </div>
+                        <div class="mobile-feature">
+                            <i data-lucide="refresh-cw" class="feature-icon-small"></i>
+                            <span>Otomatik Senkronizasyon</span>
+                        </div>
+                        <div class="mobile-feature">
+                            <i data-lucide="wifi-off" class="feature-icon-small"></i>
+                            <span>Offline Çalışma Modu</span>
+                        </div>
+                        <div class="mobile-feature">
+                            <i data-lucide="bell" class="feature-icon-small"></i>
+                            <span>Anlık Bildirimler</span>
+                        </div>
+                    </div>
+
+                    <div class="mobile-cta-group" style="margin-top: 30px;">
+                        <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20Mobil%20uygulama%20hakkında%20detaylı%20bilgi%20almak%20istiyorum."
+                            class="btn btn-primary btn-lg pulse-animation" target="_blank">
+                            <i data-lucide="smartphone"></i> Detaylı Bilgi İçin Bizimle İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile-addon-visual">
+                    <div class="phone-mockup ios-style">
+                        <div class="volume-buttons"></div>
+                        <div class="power-button"></div>
+                        <div class="phone-screen">
+                            <img src="asset/mobile_resim.jpeg" alt="SayaYazılım Mobil Uygulama"
+                                class="phone-app-screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How It Works -->
     <section class="section bg-dark text-white">
         <div class="container">
@@ -315,240 +363,174 @@
                 <p class="section-subtitle">İşletmeniz için en uygun paketi seçin ve hemen kullanmaya başlamak için
                     iletişime geçin.</p>
 
-                <div class="pricing-toggle">
-                    <span class="toggle-label active" id="monthly-label">Aylık</span>
-                    <label class="switch">
-                        <input type="checkbox" id="billing-toggle">
-                        <span class="slider round"></span>
-                    </label>
-                    <span class="toggle-label" id="yearly-label">Yıllık <span class="badge-save">%20
-                            Tasarruf</span></span>
+                <div class="pricing-grid">
+                    <!-- Plan 1: Başlangıç İşletme -->
+                    <div class="pricing-card">
+                        <h3 class="plan-name">BAŞLANGIÇ İŞLETME</h3>
+                        <div class="plan-price">
+                            <span class="currency">₺</span>
+                            <span class="amount">7.000</span>
+                            <span class="period-lifetime">Tek Seferlik Ödeme</span>
+                        </div>
+                        <p class="plan-desc">Küçük işletmeler ve şahıslar için</p>
+                        <p class="plan-sub-desc">Sonsuza kadar kullan</p>
+
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="text-success"></i> Cari Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Stok Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kasa Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Ödeme ve Tahsilat Planı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Masraf Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Raporlar</li>
+                            <li><i data-lucide="check" class="text-success"></i> Tek Kullanıcı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Windows Tabanlı PC</li>
+                            <li><i data-lucide="check" class="text-success"></i> Uzaktan Eğitim ve Destek</li>
+                        </ul>
+
+                        <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20Başlangıç%20İşletme%20paketi%20hakkında%20detaylı%20bilgi%20almak%20istiyorum."
+                            class="btn btn-outline btn-block" target="_blank">Satın Al</a>
+                    </div>
+
+                    <!-- Plan 2: Orta İşletme -->
+                    <div class="pricing-card">
+                        <h3 class="plan-name">ORTA İŞLETME</h3>
+                        <div class="plan-price">
+                            <span class="currency">₺</span>
+                            <span class="amount">10.000</span>
+                            <span class="period-lifetime">Tek Seferlik Ödeme</span>
+                        </div>
+                        <p class="plan-desc">Küçük işletmeler ve firmalar</p>
+                        <p class="plan-sub-desc">Sonsuza kadar kullan</p>
+
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="text-success"></i> Cari Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Banka ve Kart Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Çek ve Senet Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Bileşik Firma Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Stok Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kasa Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Ödeme, Tahsilat, Sevk Planı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Masraf Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Raporlar</li>
+                            <li><i data-lucide="check" class="text-success"></i> 3 Kullanıcı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Windows Tabanlı PC</li>
+                            <li><i data-lucide="check" class="text-success"></i> Uzaktan Eğitim ve Destek</li>
+                        </ul>
+
+                        <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20Orta%20İşletme%20paketi%20hakkında%20detaylı%20bilgi%20almak%20istiyorum."
+                            class="btn btn-outline btn-block" target="_blank">Satın Al</a>
+                    </div>
+
+                    <!-- Plan 3: Kapsamlı İşletme -->
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">En Çok Tercih Edilen</div>
+                        <h3 class="plan-name">KAPSAMLI İŞLETME</h3>
+                        <div class="plan-price">
+                            <span class="currency">₺</span>
+                            <span class="amount">15.000</span>
+                            <span class="period-lifetime">Tek Seferlik Ödeme</span>
+                        </div>
+                        <p class="plan-desc">Firmalar ve çoklu kullanım için</p>
+                        <p class="plan-sub-desc">Sonsuza kadar kullan</p>
+
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="text-success"></i> Cari Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Banka ve Kart Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Çek ve Senet Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Bileşik Firma Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Stok Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kasa Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Ödeme, Tahsilat, Sevk Planı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Masraf Takip ve Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kar/Zarar Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Raporlar</li>
+                            <li><i data-lucide="check" class="text-success"></i> <strong>Sınırsız Kullanıcı</strong>
+                            </li>
+                            <li><i data-lucide="check" class="text-success"></i> Windows Tabanlı PC</li>
+                            <li><i data-lucide="check" class="text-success"></i> Uzaktan Eğitim ve Destek</li>
+                        </ul>
+
+                        <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20Kapsamlı%20İşletme%20paketi%20hakkında%20detaylı%20bilgi%20almak%20istiyorum."
+                            class="btn btn-primary btn-block" target="_blank">Satın Al</a>
+                    </div>
+
+                    <!-- Plan 4: Kapsamlı API İşletme -->
+                    <div class="pricing-card">
+                        <h3 class="plan-name">KAPSAMLI API İŞLETME</h3>
+                        <div class="plan-price">
+                            <span class="currency">₺</span>
+                            <span class="amount">20.000</span>
+                            <span class="period-lifetime">Tek Seferlik Ödeme</span>
+                        </div>
+                        <p class="plan-desc">Firmalar ve çoklu kullanım için</p>
+                        <p class="plan-sub-desc">Sonsuza kadar kullan</p>
+
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="text-success"></i> Cari Takip ve Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Banka ve Kart Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Çek ve Senet Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Bileşik Firma Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Stok Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kasa Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Ödeme, Tahsilat, Sevk Planı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Masraf Takip ve Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kar/Zarar Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Raporlar</li>
+                            <li><i data-lucide="check" class="text-success"></i> <strong>Sınırsız Kullanıcı</strong>
+                            </li>
+                            <li><i data-lucide="check" class="text-success"></i> Windows Tabanlı PC</li>
+                            <li><i data-lucide="check" class="text-success"></i> <u>Android Cep API Uygulaması</u></li>
+                            <li><i data-lucide="check" class="text-success"></i> Uzaktan Eğitim ve Destek</li>
+                        </ul>
+
+                        <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20Kapsamlı%20API%20İşletme%20paketi%20hakkında%20detaylı%20bilgi%20almak%20istiyorum."
+                            class="btn btn-outline btn-block" target="_blank">Satın Al</a>
+                    </div>
+
+                    <!-- Plan 5: API İşletme -->
+                    <div class="pricing-card lifetime-special">
+                        <div class="lifetime-badge">
+                            <i data-lucide="infinity"></i>
+                            ÖZEL PAKET
+                        </div>
+                        <h3 class="plan-name">API İŞLETME</h3>
+                        <div class="plan-price">
+                            <span class="currency">₺</span>
+                            <span class="amount">90.000</span>
+                            <span class="period-lifetime">Tek Seferlik Ödeme</span>
+                        </div>
+                        <p class="plan-desc" style="font-weight: 700;">TÜM VERİLER ANDROİD CEP VEYA
+                            TABLETTEN GİRİLİR VE GÖRÜLÜR</p>
+                        <p class="plan-sub-desc">Sonsuza kadar kullan</p>
+
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="text-success"></i> Cari Takip ve Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Banka ve Kart Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Çek ve Senet Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Bileşik Firma Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Stok Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kasa Takip</li>
+                            <li><i data-lucide="check" class="text-success"></i> Ödeme, Tahsilat, Sevk Planı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Masraf Takip ve Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Kar/Zarar Defteri</li>
+                            <li><i data-lucide="check" class="text-success"></i> Raporlar</li>
+                            <li><i data-lucide="check" class="text-success"></i> 4 Kullanıcı</li>
+                            <li><i data-lucide="check" class="text-success"></i> Windows Tabanlı PC</li>
+                            <li><i data-lucide="check" class="text-success"></i> Uzaktan Eğitim ve Destek</li>
+                        </ul>
+
+                        <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20API%20İşletme%20paketi%20hakkında%20detaylı%20bilgi%20almak%20istiyorum."
+                            class="btn btn-gradient btn-block shine-animation" target="_blank">Satın Al</a>
+                    </div>
+                </div>
+
+                <div class="pricing-footer text-center mt-md">
+                    <div class="trust-item"><i data-lucide="zap"></i> Hızlı Kurulum</div>
+                    <div class="trust-item"><i data-lucide="lock"></i> Yüksek Veri Güvenliği</div>
+                    <div class="trust-item"><i data-lucide="headset"></i> Uzman Destek Ekibi</div>
                 </div>
             </div>
-
-            <div class="pricing-grid">
-                <!-- Plan 1: Başlangıç -->
-                <div class="pricing-card">
-                    <h3 class="plan-name">Başlangıç</h3>
-                    <div class="plan-price">
-                        <span class="currency">₺</span>
-                        <span class="amount monthly-price">99</span>
-                        <span class="amount yearly-price" style="display:none;">79</span>
-                        <span class="period">/ay</span>
-                    </div>
-                    <p class="plan-desc">Küçük işletmeler için ideal</p>
-
-                    <ul class="plan-features">
-                        <li><i data-lucide="check" class="text-success"></i> Temel Muhasebe Modülü</li>
-                        <li><i data-lucide="check" class="text-success"></i> Cari Hesap Takibi</li>
-                        <li><i data-lucide="check" class="text-success"></i> 100 Fatura/Ay</li>
-                        <li><i data-lucide="check" class="text-success"></i> 1 Kullanıcı</li>
-                        <li><i data-lucide="check" class="text-success"></i> Email Destek</li>
-                        <li><i data-lucide="check" class="text-success"></i> Web/Masaüstü Erişimi</li>
-                    </ul>
-
-                    <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20İşletme%20yönetim%20programınız%20hakkında%20detaylı%20bilgi%20için%20görüşebilir%20miyiz?"
-                        class="btn btn-outline btn-block" target="_blank">İletişime Geç</a>
-                </div>
-
-                <!-- Plan 2: Profesyonel -->
-                <div class="pricing-card popular">
-                    <div class="popular-badge">En Popüler</div>
-                    <h3 class="plan-name">Profesyonel</h3>
-                    <div class="plan-price">
-                        <span class="currency">₺</span>
-                        <span class="amount monthly-price">249</span>
-                        <span class="amount yearly-price" style="display:none;">199</span>
-                        <span class="period">/ay</span>
-                    </div>
-                    <p class="plan-desc">Büyüyen işletmeler için</p>
-
-                    <ul class="plan-features">
-                        <li><i data-lucide="check" class="text-success"></i> <strong>Tüm Başlangıç Özellikleri</strong>
-                        </li>
-                        <li><i data-lucide="check" class="text-success"></i> Stok Yönetimi</li>
-                        <li><i data-lucide="check" class="text-success"></i> Çek & Senet Defteri</li>
-                        <li><i data-lucide="check" class="text-success"></i> Banka Entegrasyonu</li>
-                        <li><i data-lucide="check" class="text-success"></i> Sınırsız Fatura</li>
-                        <li><i data-lucide="check" class="text-success"></i> 3 Kullanıcı</li>
-                        <li><i data-lucide="check" class="text-success"></i> Öncelikli Destek</li>
-                        <li><i data-lucide="check" class="text-success"></i> Gelişmiş Raporlama</li>
-                    </ul>
-
-                    <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20İşletme%20yönetim%20programınız%20hakkında%20detaylı%20bilgi%20için%20görüşebilir%20miyiz?"
-                        class="btn btn-primary btn-block pulse-animation" target="_blank">İletişime Geç</a>
-                </div>
-
-                <!-- Plan 3: Kurumsal -->
-                <div class="pricing-card">
-                    <h3 class="plan-name">Kurumsal</h3>
-                    <div class="plan-price">
-                        <span class="currency">₺</span>
-                        <span class="amount monthly-price">499</span>
-                        <span class="amount yearly-price" style="display:none;">399</span>
-                        <span class="period">/ay</span>
-                    </div>
-                    <p class="plan-desc">Çoklu şube ve ekipler için</p>
-
-                    <ul class="plan-features">
-                        <li><i data-lucide="check" class="text-success"></i> <strong>Tüm Profesyonel Özellikler</strong>
-                        </li>
-                        <li><i data-lucide="check" class="text-success"></i> Şube Yönetimi</li>
-                        <li><i data-lucide="check" class="text-success"></i> API Entegrasyonu</li>
-                        <li><i data-lucide="check" class="text-success"></i> Sınırsız Kullanıcı</li>
-                        <li><i data-lucide="check" class="text-success"></i> Özel Eğitim & Onboarding</li>
-                        <li><i data-lucide="check" class="text-success"></i> 7/24 Telefon Desteği</li>
-                        <li><i data-lucide="check" class="text-success"></i> Özel Rapor Tasarımı</li>
-                        <li><i data-lucide="check" class="text-success"></i> Veri Yedekleme</li>
-                    </ul>
-
-                    <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20İşletme%20yönetim%20programınız%20hakkında%20detaylı%20bilgi%20için%20görüşebilir%20miyiz?"
-                        class="btn btn-outline btn-block" target="_blank">İletişime Geç</a>
-                </div>
-
-                <!-- Plan 4: Lifetime -->
-                <div class="pricing-card lifetime-special">
-                    <div class="lifetime-badge">
-                        <i data-lucide="infinity"></i>
-                        ÖMÜR BOYU
-                    </div>
-                    <h3 class="plan-name">Lifetime</h3>
-                    <div class="plan-price">
-                        <span class="currency">₺</span>
-                        <span class="amount">12,999</span>
-                        <span class="period-lifetime">tek seferlik ödeme</span>
-                    </div>
-                    <p class="plan-desc">Bir kez öde, sonsuza kadar kullan</p>
-
-                    <div class="lifetime-savings">
-                        🎯 <strong>Profesyonel pakete göre 4 yılda kendini amorti eder</strong>
-                    </div>
-
-                    <ul class="plan-features">
-                        <li><i data-lucide="check" class="text-success"></i> <strong>Tüm Kurumsal Özellikler</strong>
-                        </li>
-                        <li><i data-lucide="check" class="text-success"></i> Ömür Boyu Kullanım Hakkı</li>
-                        <li><i data-lucide="check" class="text-success"></i> Tüm Gelecek Güncellemeler</li>
-                        <li><i data-lucide="check" class="text-success"></i> <strong>Mobil Uygulama DAHİL</strong></li>
-                        <li><i data-lucide="check" class="text-success"></i> Sınırsız Kullanıcı</li>
-                        <li><i data-lucide="check" class="text-success"></i> Sınırsız Şube</li>
-                        <li><i data-lucide="check" class="text-success"></i> Öncelikli Teknik Destek</li>
-                        <li><i data-lucide="check" class="text-success"></i> Özel Eğitim & Danışmanlık</li>
-                    </ul>
-
-                    <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20İşletme%20yönetim%20programınız%20hakkında%20detaylı%20bilgi%20için%20görüşebilir%20miyiz?"
-                        class="btn btn-gradient btn-block shine-animation" target="_blank">Lifetime Satın Al</a>
-
-
-                </div>
-            </div>
-
-            <div class="pricing-footer text-center mt-md">
-                <div class="trust-item"><i data-lucide="zap"></i> Hızlı Kurulum</div>
-                <div class="trust-item"><i data-lucide="lock"></i> Yüksek Veri Güvenliği</div>
-                <div class="trust-item"><i data-lucide="headset"></i> Uzman Destek Ekibi</div>
-            </div>
-        </div>
     </section>
-
-    <!-- Mobile Add-on Section -->
-    <section class="section bg-gradient-subtle" id="mobile-addon">
-        <div class="container">
-            <div class="mobile-addon-container">
-                <div class="mobile-addon-content">
-                    <span class="badge-new">YENİ</span>
-                    <h2 class="mobile-addon-title">Mobil Uygulama ile İşletmenizi Cebinizden Yönetin</h2>
-                    <p class="mobile-addon-description">
-                        İster iOS ister Android cihazınızdan, işletmenizin tüm verilerine anlık erişim sağlayın.
-                        Masaüstü programınızla tam entegre çalışır, verileriniz her zaman senkronize kalır.
-                    </p>
-
-                    <div class="mobile-features-grid">
-                        <div class="mobile-feature">
-                            <i data-lucide="smartphone" class="feature-icon-small"></i>
-                            <span>iOS & Android Desteği</span>
-                        </div>
-                        <div class="mobile-feature">
-                            <i data-lucide="refresh-cw" class="feature-icon-small"></i>
-                            <span>Otomatik Senkronizasyon</span>
-                        </div>
-                        <div class="mobile-feature">
-                            <i data-lucide="wifi-off" class="feature-icon-small"></i>
-                            <span>Offline Çalışma Modu</span>
-                        </div>
-                        <div class="mobile-feature">
-                            <i data-lucide="bell" class="feature-icon-small"></i>
-                            <span>Anlık Bildirimler</span>
-                        </div>
-                    </div>
-
-                    <div class="mobile-pricing-options">
-                        <div class="mobile-price-card">
-                            <div class="mobile-price-header">
-                                <h4>Aylık Kiralama</h4>
-                                <p class="text-sm text-gray">Herhangi bir pakete ekleyin</p>
-                            </div>
-                            <div class="mobile-price-amount">
-                                <span class="currency">₺</span>
-                                <span class="price">79</span>
-                                <span class="period">/ay</span>
-                            </div>
-                            <ul class="mobile-price-features">
-                                <li><i data-lucide="check"></i> İstediğiniz zaman iptal</li>
-                                <li><i data-lucide="check"></i> Otomatik güncellemeler</li>
-                                <li><i data-lucide="check"></i> Sınırsız cihaz</li>
-                            </ul>
-                            <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20İşletme%20yönetim%20programınız%20hakkında%20detaylı%20bilgi%20için%20görüşebilir%20miyiz?"
-                                class="btn btn-outline btn-block" target="_blank">İletişime Geçin</a>
-                        </div>
-
-                        <div class="mobile-price-card featured">
-                            <div class="best-value-badge">EN AVANTAJLI</div>
-                            <div class="mobile-price-header">
-                                <h4>Ömür Boyu Lisans</h4>
-                                <p class="text-sm text-gray">Tek seferlik ödeme</p>
-                            </div>
-                            <div class="mobile-price-amount">
-                                <span class="currency">₺</span>
-                                <span class="price">2,499</span>
-                                <span class="period-once">tek seferlik</span>
-                            </div>
-                            <div class="savings-badge">
-                                💰 Aylığa göre 2.5 yılda kendini amorti eder
-                            </div>
-                            <ul class="mobile-price-features">
-                                <li><i data-lucide="check"></i> Ömür boyu kullanım hakkı</li>
-                                <li><i data-lucide="check"></i> Tüm gelecek güncellemeler dahil</li>
-                                <li><i data-lucide="check"></i> Teknik destek (ömür boyu)</li>
-                                <li><i data-lucide="check"></i> Sınırsız cihaz</li>
-                            </ul>
-                            <a href="https://api.whatsapp.com/send?phone=905419724041&text=Merhaba,%20Saya%20Yazılım%20web%20siteniz%20üzerinden%20ulaşıyorum.%20İşletme%20yönetim%20programınız%20hakkında%20detaylı%20bilgi%20için%20görüşebilir%20miyiz?"
-                                class="btn btn-primary btn-block pulse-animation" target="_blank">İletişime Geç</a>
-                        </div>
-                    </div>
-
-                    <div class="mobile-addon-note">
-                        <i data-lucide="info"></i>
-                        <p>Mobil uygulamayı kullanmak için web sürümü almak zorunlu değildir. Mobil uygulama tek başına
-                            da kullanılabilir.</p>
-                    </div>
-                </div>
-
-                <div class="mobile-addon-visual">
-                    <div class="phone-mockup ios-style">
-                        <div class="volume-buttons"></div>
-                        <div class="power-button"></div>
-                        <div class="phone-screen">
-                            <img src="asset/mobile_resim.jpeg" alt="SayaYazılım Mobil Uygulama"
-                                class="phone-app-screen">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- FAQ -->
     <section class="section">
