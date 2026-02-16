@@ -2231,13 +2231,17 @@ img {
     backface-visibility: hidden;
 }
 
-.window-mockup.single-window:hover {
-    transform: perspective(2500px) rotateY(0deg) rotateX(0deg);
-    /* Flatten */
-    /* Reduce thickness visual when flat */
-    border-right: 1px solid rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+.window-mockup.single-window.primary-window {
+    transform: perspective(2500px) rotateY(-2.5deg) rotateX(1.5deg) translateX(40px);
+    z-index: 2;
+    margin-bottom: 100px;
+    /* Increased space between windows */
+}
+
+.window-mockup.single-window.secondary-window {
+    transform: perspective(2500px) rotateY(-2.5deg) rotateX(1.5deg) translateX(-40px);
+    /* Removed negative margin-top to prevent overlap */
+    z-index: 1;
 }
 
 /* Header with Text */
