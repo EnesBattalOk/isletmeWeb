@@ -28,9 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.nav-menu');
 
-    mobileBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
+    if (mobileBtn && navMenu) {
+        mobileBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
 
     // Pricing Toggle (Monthly / Yearly)
     const billingToggle = document.getElementById('billing-toggle');
@@ -39,49 +41,60 @@ document.addEventListener('DOMContentLoaded', () => {
     const monthlyLabel = document.getElementById('monthly-label');
     const yearlyLabel = document.getElementById('yearly-label');
 
-    billingToggle.addEventListener('change', () => {
-        if (billingToggle.checked) {
-            // Yearly
-            monthlyPrices.forEach(el => el.style.display = 'none');
-            yearlyPrices.forEach(el => el.style.display = 'inline');
-            monthlyLabel.classList.remove('active');
-            yearlyLabel.classList.add('active');
-        } else {
-            // Monthly
-            monthlyPrices.forEach(el => el.style.display = 'inline');
-            yearlyPrices.forEach(el => el.style.display = 'none');
-            monthlyLabel.classList.add('active');
-            yearlyLabel.classList.remove('active');
-        }
-    });
+    if (billingToggle) {
+        billingToggle.addEventListener('change', () => {
+            if (billingToggle.checked) {
+                // Yearly
+                monthlyPrices.forEach(el => el.style.display = 'none');
+                yearlyPrices.forEach(el => el.style.display = 'inline');
+                if (monthlyLabel) monthlyLabel.classList.remove('active');
+                if (yearlyLabel) yearlyLabel.classList.add('active');
+            } else {
+                // Monthly
+                monthlyPrices.forEach(el => el.style.display = 'inline');
+                yearlyPrices.forEach(el => el.style.display = 'none');
+                if (monthlyLabel) monthlyLabel.classList.add('active');
+                if (yearlyLabel) yearlyLabel.classList.remove('active');
+            }
+        });
+    }
 
     // FAQ Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(question => {
-        question.addEventListener('click', () => {
-            const item = question.parentElement;
-
-            // Close others
-            document.querySelectorAll('.faq-item').forEach(otherItem => {
-                if (otherItem !== item) {
+    if (faqQuestions.length > 0) {
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                
+                // Toggle current item
+                const wasActive = item.classList.contains('active');
+                
+                // Close others
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
                     otherItem.classList.remove('active');
+                });
+
+                // If it wasn't active before, make it active now
+                if (!wasActive) {
+                    item.classList.add('active');
                 }
             });
-
-            item.classList.toggle('active');
         });
-    });
+    }
 
     // Smooth Scroll for Anchor Links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-            if (href !== '#') {
-                e.preventDefault();
-                navMenu.classList.remove('active');
-                document.querySelector(href).scrollIntoView({
-                    behavior: 'smooth'
-                });
+            if (href !== '#' && href.length > 1) {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    if (navMenu) navMenu.classList.remove('active');
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });
@@ -101,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    const animateElements = document.querySelectorAll('.feature-card, .pricing-card, .step-item, .testimonial-card');
+    const animateElements = document.querySelectorAll('.feature-card, .section-title, .about-text-wrapper, .faq-item, .mobile-addon-container');
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
